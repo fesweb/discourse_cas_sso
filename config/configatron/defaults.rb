@@ -9,23 +9,23 @@
                                                       #   configatron.file.storage = :s3
 
 configatron.sso.login.path = '/session/sso_login'
-configatron.sso.secret = 'ToTX`#TLy@ioR^exPKb@&sfyD'
+configatron.sso.secret = 'ToTX`#TLy@ioR^exPKb@&sfyDWaitWATWTF'
 
 configatron.sso.suppress_welcome_message = false
 
-configatron.cas.email_attribute = 'UserPrincipalName'    # CAS attribute containing user's e-mail. Example: 'UserPrincipalName'
-configatron.cas.name_attribute = 'Name' # CAS attribute containing user's username. Example: 'Name'
+configatron.cas.email_attribute = 'email'    # CAS attribute containing user's e-mail. Example: 'UserPrincipalName'
+configatron.cas.name_attribute = 'cn' # CAS attribute containing user's username. Example: 'Name'
 
 configatron.cas.attributes_hash = :extra #in some small about a of cases this may be :info
 
 configatron.cas.avatar_enabled = false		      # Specifies whether avatars should be consumed and provided to Discourse.
-configatron.cas.avatar_url_attribute = 'photo'        # CAS attribute containing user's photo. Example: 'jpegPhoto'
+configatron.cas.avatar_url_attribute = false       # CAS attribute containing user's photo. Example: 'jpegPhoto'
 configatron.cas.avatar_force_update_attribute = false  # Discourse parameter specifying whether avatar should be re-downloaded if cached.
                                                       # Discourse does not re-download avatars that have already been downloaded from the same URL.
                                                       # See: https://github.com/discourse/discourse/pull/2670
 
 
-configatron.custom_field.username = false
+configatron.custom_field.username = uid
 
 configatron.filter_by_groups = true
 configatron.sso.groups.name = 'Groups'
