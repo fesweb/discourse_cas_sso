@@ -75,7 +75,7 @@ class SingleSignOn
 
   def to_url(base_url=nil)
     base = "#{base_url || sso_url}"
-    "#{base}#{base.include?('?') ? '&' : '?'}#{payload}"
+    "#{base}#{'/'}#{CGI::escape(payload)}"
   end
 
   def payload
